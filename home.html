@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f2;
+            text-align: center;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1 {
+            padding: 20px;
+            color: #555;
+        }
+
+        p {
+            margin: 0;
+            padding: 10px;
+        }
+
+        h2 {
+            cursor: pointer;
+            color: #555;
+            text-decoration: underline;
+            margin: 10px 0;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <title>Welcome to my website</title>
+</head>
+<body>
+
+    <h1>SELVI HAMBARDZUMYAN CV</h1>
+
+    <p>Email: <a href="mailto:selvihambardzumyan04@gmail.com">selvihambardzumyan04@gmail.com</a><br>
+        Phone: +37477113378<br>
+        LinkedIn: <a href="https://www.linkedin.com/in/selvi-hambardzumyan-2bb4ab256/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+    </p>
+
+    <h2 class="toggle-section" onclick="toggleSection('education')">Education</h2>
+    <div id="education" class="hidden">
+        <p><strong>American University of Armenia</strong><br>
+            Bachelor of Arts in Business - Statistics<br>
+            - Microeconomics<br>
+            - Business mathematics<br>
+            - Accounting
+        </p>
+    </div>
+
+    <h2 class="toggle-section" onclick="toggleSection('additionalTrainings')">Additional Trainings</h2>
+    <div id="additionalTrainings" class="hidden">
+        <p>Product management course at Armenian Code Academy</p>
+    </div>
+
+    <h2 class="toggle-section" onclick="toggleSection('professionalExperience')">Professional Experience</h2>
+    <div id="professionalExperience" class="hidden">
+        <p><strong>Casekey Business Competition</strong><br>
+            - Participant<br>
+            2022-2026 (expected)<br>
+            May-Aug 2023<br>
+            May-Nov 2023<br>
+            Casekey is a business case competition where young and talented individuals form strategies for various real business cases.
+        </p>
+        
+        <p><strong>Social media marketing internship at IVY Armenia Influencer Marketing agency</strong><br>
+            - Conducted a social media analysis and research<br>
+            - Communicated with the clients and a graphic designer to align the objectives<br>
+            - Developed copywriting, reel-making, and creative content-creation skills<br>
+            - Created presentations to represent marketing campaigns
+        </p>
+
+        <p><strong>“Marketing and business management” internship at Yerevan Mall</strong><br>
+            - Took classes about management and marketing<br>
+            - Managed a project about defining Yerevan Mall's target audience
+        </p>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.classList.toggle('hidden');
+        }
+    </script>
+
+</body>
+</html>
+
